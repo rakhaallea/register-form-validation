@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Form Advanced Validation</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <main class="container">
+        <div class="form-card">
+            <header class="form-header">
+                <h1>Buat Akun Baru</h1>
+                <p>Silakan isi formulir dibawah ini untuk mendaftar.</p>
+            </header>
+
+            <form id="registerForm" class="form" novalidate>
+                
+                <div class="form-group">
+                    <label for="username">Nama Pengguna</label>
+                    <input
+                        type="text"
+                        id="username"
+                        name="username"
+                        placeholder="Masukkan nama pengguna"
+                        aria-describedby="usernameError"
+                        autocomplete="off"
+                    />  
+                    <small
+                        id="usernameError"
+                        class="error-message"
+                        aria-live="polite"          
+                    ></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Masukkan email"
+                        aria-describedby="emailError"
+                        autocomplete="off"
+                    />
+                    <small
+                        id="emailError"
+                        class="error-message"
+                        aria-live="polite"          
+                    ></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Kata Sandi</label>
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="Minimal 8 karakter"
+                        aria-describedby="passwordError"
+                        autocomplete="off"
+                    />
+
+                    <div class="strength-meter">
+                        <div id="strengthBar" class="strength-bar"></div>
+                    </div>
+
+                    <small
+                        id="strengthText"
+                        class="strength-text"        
+                    ></small>
+
+                    <small
+                        id="passwordError"
+                        class="error-message"
+                        aria-live="polite"          
+                    ></small>
+                </div>
+                
+                <div class="form-group">
+                    <label for="confirmPassword">Konfirmasi Kata Sandi</label>
+                    <input
+                        type="password"
+                        id="confirmPassword"
+                        name="confirmPassword"
+                        placeholder="Ulangi kata sandi"
+                        aria-describedby="confirmPasswordError"
+                        autocomplete="off"
+                    />
+                    <small
+                        id="confirmPasswordError"
+                        class="error-message"
+                        aria-live="polite"          
+                    ></small>
+                </div>
+
+                <button type="submit" id="submitBtn" class="btn-submit">
+                    <span class="btn-text">Daftar Sekarang</span>
+                </button>
+
+            </form>
+        </div>
+    </main>
+
+
+    <script src="js/validation.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
