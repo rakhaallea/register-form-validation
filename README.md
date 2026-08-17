@@ -40,7 +40,7 @@ A clean, accessible, and responsive user registration form with real-time field 
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/rakhaallea/weather-app.git
+   git clone https://github.com/rakhaallea/register-form-validation.git
    ```
 
 2. **Open the project:**
