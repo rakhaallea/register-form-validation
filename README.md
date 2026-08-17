@@ -1,39 +1,53 @@
-# 📝 Register Form with Advanced Validation & Accessibility
+# 📝 Register Form with Validation & a11y
 
-A modern, accessible, and responsive user registration form with real-time field validation, dynamic password strength estimation, and accessible status messaging built using Vanilla JavaScript, Semantic HTML5, and CSS3.
-
-![Project Status](https://img.shields.io/badge/Status-Completed-success?style=flat-square)
-![Stack](https://img.shields.io/badge/Stack-HTML5_|_CSS3_|_JavaScript-blue?style=flat-square)
+A clean, accessible, and responsive user registration form with real-time field validation and dynamic password strength estimation built using Vanilla JavaScript, HTML5, and CSS3.
 
 ---
 
-## 🚀 Key Features
+## 🚀 Features
 
-* **Real-time Field Validation:** Immediate input validation powered by the `input` event listener to provide seamless feedback as the user types.
-* **Email Regex Pattern Checking:** RegEx evaluation to enforce standard email format (`name@domain.com`).
-* **Password Strength Indicator:** Real-time visual strength meter measuring length, letter case variations, numbers, and special characters.
-* **Password Confirmation Match:** Cross-field validation ensuring `Password` and `Confirm Password` inputs match perfectly.
-* **Interactive UI States:** Automatic field highlighting (Green for valid / Red for errors) with dynamic status error messages.
-* **Accessibility-First Design (a11y):** Integrated `aria-describedby` and `aria-live="polite"` attributes to ensure Screen Reader compatibility.
-
----
-
-## 🛠️ Built With
-
-* **HTML5:** Semantic form controls and ARIA attributes for full accessibility.
-* **CSS3:** Custom properties (variables), Flexbox layout, and CSS transition effects.
-* **Vanilla JavaScript (ES6+):** Pure functions for modular validation rules separated from DOM handling logic.
+- **Real-Time Validation:** Instant feedback on username, email, and password as you type.
+- **Password Strength Meter:** Live visual indicator evaluating complexity, character types, and length.
+- **Password Match Check:** Dynamic confirmation check between password fields.
+- **Accessibility First (a11y):** ARIA live regions (`aria-live="polite"`), `aria-describedby`, and full keyboard navigation.
+- **Visual Feedback:** Interactive UI states with error highlighting and clear status messages.
 
 ---
 
-## 📂 Project Directory Structure
+## 🛠️ Tech Stack
 
-```plaintext
-register-form-validation/
+- **HTML5:** Semantic form controls and ARIA attributes.
+- **CSS3:** Custom properties (variables), Flexbox layout, and smooth UI transitions.
+- **Vanilla JavaScript (ES6+):** Modular validation logic, RegEx pattern matching, and DOM event handling.
+
+---
+
+## 📁 Project Structure
+
+```text
 ├── css/
-│   └── style.css       # Core design tokens, layout & interactive input states
+│   └── style.css       # Layout styling, UI tokens & input states
 ├── js/
-│   ├── validation.js  # Pure validation functions & RegEx logic
-│   └── app.js         # Event handling, DOM manipulations & submit guards
-├── index.html         # Accessible & semantic form layout
-└── README.md          # Project documentation
+│   ├── validation.js   # Pure validation functions & RegEx logic
+│   └── app.js          # Event listeners, DOM manipulation & submit guard
+├── index.html          # Semantic HTML form layout
+└── README.md
+```
+
+---
+
+## ⚡ Getting Started
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/rakhaallea/weather-app.git
+   ```
+
+2. **Open the project:**
+   Simply open `index.html` directly in your browser or run it using a local development server like VS Code Live Server.
+
+--- 
+
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE) - see the LICENSE file for details.

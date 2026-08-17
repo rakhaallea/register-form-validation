@@ -130,77 +130,86 @@ body {
 
 /* State Error (Gagal Validasi) */
 .form-group.error input {
-  border-color: var(--error-color);
-  background-color: var(--error-bg);
+    border-color: var(--error-color);
+    background-color: var(--error-bg);
 }
 
 .form-group.error input:focus {
-  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.2);
+    box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.2);
 }
 
 .error-message {
-  font-size: 0.8rem;
-  color: var(--error-color);
-  margin-top: 0.35rem;
-  min-height: 1.1rem; /* Mencegah layout meloncat saat pesan muncul */
-  display: block;
+    font-size: 0.8rem;
+    color: var(--error-color);
+    margin-top: 0.35rem;
+    min-height: 1.1rem;
+    /* Mencegah layout meloncat saat pesan muncul */
+    display: block;
 }
 
 /* State Success (Lolos Validasi) */
 .form-group.success input {
-  border-color: var(--success-color);
-  background-color: var(--success-bg);
+    border-color: var(--success-color);
+    background-color: var(--success-bg);
 }
 
 .form-group.success input:focus {
-  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.2);
+    box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.2);
 }
 
 /* ==========================================================================
    6. PASSWORD STRENGTH INDICATOR
    ========================================================================== */
 .strength-meter {
-  height: 4px;
-  width: 100%;
-  background-color: #e5e7eb;
-  border-radius: 2px;
-  margin-top: 0.5rem;
-  overflow: hidden;
+    height: 4px;
+    width: 100%;
+    background-color: #e5e7eb;
+    border-radius: 2px;
+    margin-top: 0.5rem;
+    overflow: hidden;
 }
 
 .strength-bar {
-  height: 100%;
-  width: 0%;
-  border-radius: 2px;
-  transition: var(--transition);
+    height: 100%;
+    width: 0%;
+    border-radius: 2px;
+    transition: var(--transition);
 }
 
 /* Class dinamis dari JS untuk Strength Meter */
 .strength-bar.weak {
-  width: 33%;
-  background-color: var(--strength-weak);
+    width: 33%;
+    background-color: var(--strength-weak);
 }
 
 .strength-bar.medium {
-  width: 66%;
-  background-color: var(--strength-medium);
+    width: 66%;
+    background-color: var(--strength-medium);
 }
 
 .strength-bar.strong {
-  width: 100%;
-  background-color: var(--strength-strong);
+    width: 100%;
+    background-color: var(--strength-strong);
 }
 
 .strength-text {
-  font-size: 0.75rem;
-  font-weight: 600;
-  margin-top: 0.25rem;
-  display: block;
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin-top: 0.25rem;
+    display: block;
 }
 
-.strength-text.weak { color: var(--strength-weak); }
-.strength-text.medium { color: var(--strength-medium); }
-.strength-text.strong { color: var(--strength-strong); }
+.strength-text.weak {
+    color: var(--strength-weak);
+}
+
+.strength-text.medium {
+    color: var(--strength-medium);
+}
+
+.strength-text.strong {
+    color: var(--strength-strong);
+}
 
 /* ==========================================================================
    7. SUBMIT BUTTON
